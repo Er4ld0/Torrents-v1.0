@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Font';
 }
 
 :root {
@@ -35,7 +36,7 @@
 
 @font-face {
     font-family: 'Font';
-    src: url(../fonts/typo_round/Typo_Round_Regular_Demo.otf);
+    src: url(../fonts/azn-knuckles-trial-font/AznKnucklesTrialLight-jEyJl.otf);
 }
 
 /*-------------Unificações-------------*/
@@ -88,10 +89,6 @@ main {
     background: none;
     top: 50%;
     left: 50%;
-}
-
-.maincontainer:hover {
-    transform: scale(1.01);
 }
 
 .thecard {
