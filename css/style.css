@@ -1,0 +1,245 @@
+/*-------------Regras Gerais-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --torrent_btn: #5ecb66;
+    --torrent_font: #314e55;
+    --torrent_btn_active: #8fd494;
+    --torrent_font_active: #547881;
+    --mega_btn: #d90007;
+    --white: #ffffff;
+    --mega_btn_active: #ff0008;
+    --mega_font_active: #a7a7a7;
+    --extra_btn: #a52a2a;
+    --extra_btn_active: #ac4545;
+    --extra_font_active: #a7a7a7;
+}
+
+/*-------------Keyframes-------------*/
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@font-face {
+    font-family: 'Font';
+    src: url(../fonts/typo_round/Typo_Round_Regular_Demo.otf);
+}
+
+/*-------------Unificações-------------*/
+main,
+div,
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+main,
+.description {
+    display: flex;
+}
+
+aside {
+    font-family: 'Font';
+    background-color: darkred;
+    width: 18.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+aside>ul {
+    list-style-type: none;
+}
+
+/*-------------Main-------------*/
+
+body {
+    width: 100vw;
+}
+
+main {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.91);
+    padding: 1.25rem;
+}
+
+/*-------------Card do Jogo-------------*/
+
+.maincontainer {
+    position: static;
+    width: 17.125rem;
+    height: 24.188rem;
+    background: none;
+    top: 50%;
+    left: 50%;
+}
+
+.maincontainer:hover {
+    transform: scale(1.01);
+}
+
+.thecard {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 17.125rem;
+    height: 24.188rem;
+    border-radius: 0.625rem;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.thecard:hover {
+    cursor: pointer;
+}
+
+.thefront {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17.125rem;
+    height: 24.188rem;
+    border-radius: 0.625rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+    color: #000;
+}
+
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fafafa;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+/*-------------Descrição-------------*/
+
+h1 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.description_item {
+    flex-direction: row;
+    gap: 0.313rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+h1,
+h3,
+p {
+    color: black;
+}
+
+/*-------------Capa do Jogo-------------*/
+
+.game_cover {
+    width: 17.125rem;
+    height: 24.188rem;
+    border-radius: 0.313rem;
+}
+
+/*-------------Botão de Download Principal-------------*/
+
+button {
+    gap: 0.625rem;
+    width: 12.5rem;
+    height: 2.313rem;
+    border: none;
+    border-radius: 0.313rem;
+    background-color: var(--torrent_btn);
+    color: var(--torrent_font);
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--torrent_btn_active);
+    color: var(--torrent_font_active);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+button.mega {
+    background-color: var(--mega_btn);
+    color: var(--white);
+}
+
+button.mega:hover {
+    background-color: var(--mega_btn_active);
+    color: var(--mega_font_active);
+}
+
+/*-------------Ícone do Botão-------------*/
+
+button>img {
+    width: 2rem;
+    margin: 0;
+}
+
+/*-------------Botão Adicional-------------*/
+
+.extra {
+    font-size: 1rem;
+    background-color: var(--extra_btn);
+    color: var(--white);
+    height: 1.5rem;
+}
+
+.extra:hover {
+    background-color: var(--extra_btn_active);
+    color: var(--extra_font_active);
+}
+
+div.extra_double {
+    gap: 0.425rem;
+}
+
+.extra_double>a>.extra {
+    width: 5.938rem;
+}
+
+/*=======================================*/
