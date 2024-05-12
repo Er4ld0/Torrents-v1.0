@@ -9,17 +9,17 @@
         height: 12.094rem;
     }
 
-    .thecard {
+    .card {
         width: 100%;
         height: 100%;
     }
 
-    .thefront {
+    .card_front {
         width: 100%;
         height: 100%;
     }
 
-    .theback {
+    .card_back {
         width: 100%;
         height: 100%;
     }
@@ -31,7 +31,7 @@
 
     .description {
         flex-direction: column;
-        gap: 0.2rem;
+        gap: 0.5rem;
     }
 
     .description_item {
@@ -40,28 +40,28 @@
     }
 
     h1 {
-        font-size: 0.875rem;
+        font-size: 0.675rem;
         margin: 0.313rem;
     }
 
     h3 {
-        font-size: 0.688rem;
+        font-size: 0.588rem;
     }
 
     p {
-        font-size: 0.688rem;
+        font-size: 0.488rem;
     }
 
     button {
         width: 100%;
         height: 1.3rem;
-        font-size: 0.613rem;
+        font-size: 0.513rem;
         gap: 0.313rem;
         padding: 0.25rem;
     }
 
-    .extra{
-        font-size: 0.5rem;
+    .extra {
+        font-size: 0.4rem;
         height: 1rem;
     }
 
@@ -70,7 +70,7 @@
     }
 
     .extra_double>a>.extra {
-        width: 3.75rem;
+        width: 2rem;
     }
 }
 
@@ -107,28 +107,29 @@
     }
 
     h1 {
-        font-size: 1.438rem;
+        font-size: 1.238rem;
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 0.875rem;
+        font-size: 0.675rem;
     }
 
-    button,
-    .extra {
+    button {
         width: 100%;
         height: 1.563rem;
-        font-size: 1.25rem;
+        font-size: 0.8rem;
         gap: 0.313rem;
         padding: 0.25rem;
     }
 
     .extra {
-        font-size: 1.125rem;
+        width: 100%;
+        font-size: 0.6rem;
+        height: 1rem;
     }
 
     button>img {
@@ -137,7 +138,7 @@
 
     .extra_double>a>.extra {
         width: 3.75rem;
-        font-size: 0.813rem;
+        font-size: 0.613rem;
     }
 }
 
@@ -172,7 +173,7 @@
     }
 
     .extra {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     button>img {
@@ -181,6 +182,6 @@
 
     .extra_double>a>.extra {
         width: 3.75rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
