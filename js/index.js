@@ -102,3 +102,9 @@ function flipCard12() {
         card12.style.transform = 'rotateY(180deg)'
     }
 }
+
+var card = document.getElementById('card');
+
+var teste = new Audio();
+teste.src = 'assets/sound_hover.mp3';
+

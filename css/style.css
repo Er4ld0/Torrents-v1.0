@@ -9,20 +9,19 @@
 }
 
 :root {
-    --torrent_btn: #5ecb66;
-    --torrent_font: #314e55;
-    --torrent_btn_active: #8fd494;
-    --torrent_font_active: #547881;
+    --torrent_btn: #008609;
+    --torrent_font: #ffffff;
+    --torrent_btn_active: #00a00b;
+    --torrent_font_active: #ffffff;
     --mega_btn: #d90007;
     --white: #ffffff;
     --mega_btn_active: #ff0008;
     --mega_font_active: #a7a7a7;
-    --extra_btn: #a52a2a;
-    --extra_btn_active: #ac4545;
-    --extra_font_active: #a7a7a7;
+    --extra_btn: #000000;
+    --extra_btn_active: #242424;
 }
 
-/*-------------Keyframes-------------*/
+/*-------------Medias-------------*/
 
 @keyframes spin {
     0% {
@@ -104,7 +103,10 @@ main {
 
 .card:hover {
     cursor: pointer;
+    box-shadow: 0 0 25px red;
 }
+
+
 
 .card_front {
     position: absolute;
@@ -192,6 +194,10 @@ button {
     font-size: large;
 }
 
+button:active, button>img{
+    font-size: 2rem;
+}
+
 button:hover {
     background-color: var(--torrent_btn_active);
     color: var(--torrent_font_active);
@@ -227,9 +233,12 @@ button>img {
     height: 1.5rem;
 }
 
+.extra:active{
+    font-size: 2rem;
+}
+
 .extra:hover {
     background-color: var(--extra_btn_active);
-    color: var(--extra_font_active);
 }
 
 div.extra_double {
@@ -238,6 +247,11 @@ div.extra_double {
 
 .extra_double>a>.extra {
     width: 5.938rem;
+}
+
+.extra_double>a>.extra:active{
+    font-size: 1rem;
+    width: 7rem;
 }
 
 /*=======================================*/
