@@ -103,8 +103,16 @@ function flipCard12() {
     }
 }
 
-var card = document.getElementById('card');
+function flipCard13() {
+    if (card13.style.transform == 'rotateY(180deg)') {
+        card13.style.transform = 'none'
+    }
+    else {
+        card13.style.transform = 'rotateY(180deg)'
+    }
+}
 
-var teste = new Audio();
-teste.src = 'assets/sound_hover.mp3';
+const card = document.getElementById('card');
 
+var audioHover = new Audio();
+audioHover.src = 'assets/hover_sound.wav';
