@@ -194,7 +194,8 @@ button {
     font-size: large;
 }
 
-button:active, button>img{
+button:active,
+button>img {
     font-size: 2rem;
 }
 
@@ -233,7 +234,7 @@ button>img {
     height: 1.5rem;
 }
 
-.extra:active{
+.extra:active {
     font-size: 2rem;
 }
 
@@ -249,7 +250,7 @@ div.extra_double {
     width: 5.938rem;
 }
 
-.extra_double>a>.extra:active{
+.extra_double>a>.extra:active {
     font-size: 1rem;
     width: 7rem;
 }

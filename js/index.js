@@ -112,7 +112,19 @@ function flipCard13() {
     }
 }
 
-const card = document.getElementById('card');
+function flipCard14() {
+    if (card14.style.transform == 'rotateY(180deg)') {
+        card14.style.transform = 'none'
+    }
+    else {
+        card14.style.transform = 'rotateY(180deg)'
+    }
+}
 
-var audioHover = new Audio();
-audioHover.src = 'assets/hover_sound.wav';
+// const card = document.getElementById('card');
+
+// var audioHover = new Audio();
+// audioHover.src = 'assets/hover_sound.wav';
+
+// var audioWelcome = new Audio();
+// audioWelcome.src = 'assets/welcome.mp3';
