@@ -121,6 +121,15 @@ function flipCard14() {
     }
 }
 
+function flipCard15() {
+    if (card15.style.transform == 'rotateY(180deg)') {
+        card15.style.transform = 'none'
+    }
+    else {
+        card15.style.transform = 'rotateY(180deg)'
+    }
+}
+
 // const card = document.getElementById('card');
 
 // var audioHover = new Audio();
